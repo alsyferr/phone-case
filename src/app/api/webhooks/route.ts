@@ -128,7 +128,7 @@ export async function POST(req: Request) {
                             country: shippingAddress!.country!,
                             postalCode: shippingAddress!.postal_code!,
                             street: shippingAddress!.line1!,
-                            state: shippingAddress!.state,
+                            state: shippingAddress!.state!,
                         },
                     },
                     billingAddress: {
@@ -138,7 +138,7 @@ export async function POST(req: Request) {
                             country: billingAddress!.country!,
                             postalCode: billingAddress!.postal_code!,
                             street: billingAddress!.line1!,
-                            state: billingAddress!.state,
+                            state: billingAddress!.state!,
                         },
                     },
                 },
